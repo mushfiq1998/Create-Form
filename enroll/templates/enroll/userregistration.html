@@ -1,0 +1,55 @@
+<!--
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>user registration </title>
+    </head>
+<body>
+    <h3>Student form:</h3>
+    <form action="" method="get" >
+        <table>
+            {{form}}
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+!-->
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>user registration </title>
+    </head>
+<body>
+    <h3>Student form:</h3>
+    form.as_table
+    <form action="" method="get">
+            {{form.as_table}}
+        <input type="submit" value="Submit">
+    </form>
+    <hr/>
+    form.as_p
+    <form action="" method="get">
+            {{form.as_p}}
+        <input type="submit" value="Submit">
+    </form>
+    <hr/>
+    form.as_ul
+    <form action="" method="get">
+            {{form.as_ul}}
+        <input type="submit" value="Submit">
+    </form>
+    <hr/>
+    form.as_ul
+    <form action="" method="get">
+            {{form.name}}
+            {{form.email}}
+            {{form.password}}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
